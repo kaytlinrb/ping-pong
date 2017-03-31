@@ -10,6 +10,23 @@
 
 ## Specs
 
+It can count up to the provided number
+Input:  2   Output:   2
+
+It can print number to page
+
+It can return 'ping' if divisible by 3
+Input:  6   Output:   Ping
+
+It can return 'pong' if divisible by 5
+Input:  10  Output:   Pong
+
+It can return 'ping-pong' if divisible by 15
+Input:  15  Output:   Ping-Pong Ping Pong
+
+It can remove 'ping' and 'pong' when a number is divisible by 15
+Input:  15  Output:   Ping-Pong
+
 
 
 ## Setup/Installation Requirements
