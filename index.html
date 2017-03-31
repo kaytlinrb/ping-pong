@@ -6,13 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <script src="js/jquery-3.2.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Ping-Pong</title>
+  <title>Ping-Ponger</title>
 </head>
-<body>
+<body class= "background">
   <div class="container">
-    <div class="jumbotron"><h2>Ping-Pong</h2>
+    <div class="jumbotron"><h2 class="title">Ping-Pong</h2>
+    </div>
+    <div class="instructions">
+      <hr class="line">
+      <h3>To Play:</h3>
+      <ul>
+        <li>"Ping" appears for numbers divisible by 3</li>
+        <li>"Pong" appears for numbers divisible by 5</li>
+        <li>"Ping-Pong" appears for numbers divisible by 15</li>
+      </ul>
+      <hr class="line">
     </div>
     <form id="pingPongForm">
       <div class="form-group">
@@ -23,6 +34,5 @@
     </form>
     <ul id="returnSection"></ul>
   </div>
-
 </body>
 </html>
