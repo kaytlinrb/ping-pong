@@ -17,7 +17,11 @@
   font-size: 27px;
 }
 
-.line{
-  width:75%
-  border: solid black 2px;
+.result{
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
 }

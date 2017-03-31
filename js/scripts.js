@@ -11,6 +11,9 @@ var pingPonger = function (number) {
   else if (number %15 === 0) {
     name="Ping-Pong"
   }
+  else{
+    name=number
+  }
   return name;
 }
 }
@@ -22,6 +25,6 @@ $(function() {
       event.preventDefault();
       var userInput= parseInt($("#numberInput").val())
       var result = pingPonger(userInput);
-    $("#returnSection").append("<li>" + result + "</li>")
+    $("#returnSection").prepend('<li class="result">' + result + '</li>')
   });
 });
