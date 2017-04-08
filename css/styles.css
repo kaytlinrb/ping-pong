@@ -17,8 +17,7 @@
   font-size: 27px;
 }
 
-.result{
-  list-style-type: none;
+#returnSection{
   text-align: center;
   font-family: 'Indie Flower', cursive;
   font-size: 50px;

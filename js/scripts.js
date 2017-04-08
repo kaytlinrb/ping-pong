@@ -1,21 +1,25 @@
 
 var pingPonger = function (number) {
-  var name = "";
-  for (var index=0; index<1; index++){
-  if ((number %3 === 0) && (number %15 !== 0)) {
-    name ="Ping"
+
+  var name = [];
+
+  for (var index=1; index<= number; index++){
+
+    if ((index %3 === 0) && (index %15 !== 0)) {
+      name.push("Ping")
+    }
+    else if ((index %5 === 0 ) && (index %15 !==0)) {
+      name.push("Pong")
+    }
+    else if (index %15 === 0) {
+      name.push("Ping-Pong")
+    }
+    else{
+      name.push(index)
+    }
   }
-  else if ((number %5 === 0 ) && (number %15 !==0)) {
-    name = "Pong"
-  }
-  else if (number %15 === 0) {
-    name="Ping-Pong"
-  }
-  else{
-    name=number
-  }
-  return name;
-}
+  console.log(name)
+  return name
 }
 
 
@@ -25,6 +29,6 @@ $(function() {
       event.preventDefault();
       var userInput= parseInt($("#numberInput").val())
       var result = pingPonger(userInput);
-    $("#returnSection").prepend('<li class="result">' + result + '</li>')
+    $("#returnSection").text(result)
   });
 });
